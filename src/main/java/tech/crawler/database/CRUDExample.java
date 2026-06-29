@@ -1,6 +1,6 @@
-package tech.crawler.entity;
+package tech.crawler.database;
 
-import tech.crawler.database.GenericDB;
+import tech.crawler.entity.Coders;
 
 import java.util.Date;
 import java.util.List;
