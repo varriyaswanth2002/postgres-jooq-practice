@@ -7,7 +7,7 @@ public class TestCodersTable {
 
     public static void main(String[] args) {
 
-        Coders coder = new Coders("spammer",22L);
+        Coders coder = new Coders("Tom Cruise",45L);
 
         //Insert this object into DB !
 

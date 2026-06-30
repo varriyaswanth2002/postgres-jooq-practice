@@ -1,5 +1,7 @@
 package tech.crawler.database;
 
+import tech.crawler.utility.SysProperties;
+
 import java.sql.SQLException;
 
 public class DatabaseUtil {
@@ -8,7 +10,7 @@ public class DatabaseUtil {
     static {
         try {
             databaseConnectionPool = new DatabaseConnectionPool(
-                    "jdbc:postgresql://127.0.0.1:5432/twitter", "postgres","postgres" , 350, 350);
+                    "jdbc:postgresql://127.0.0.1:5432/twitter", SysProperties.getPropertyValue("DB_USERNAME"),SysProperties.getPropertyValue("DB_PASSWORD") , 350, 350);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
